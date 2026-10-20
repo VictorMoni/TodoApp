@@ -1,3 +1,5 @@
+![TodoApp — project cover](.github/project-cover-dark.svg)
+
 # ![](https://img.icons8.com/fluency/48/microsoft-todo-2019.png) Todo App
 
 This is a simple to-do list application developed using React and Vite. The application allows you to add, edit and delete tasks in a practical and intuitive way.
