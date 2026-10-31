@@ -1,7 +1,7 @@
 import { PlusCircle } from "phosphor-react";
 import styles from "./FormTask.module.css";
 import { v4 as uuid } from "uuid";
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from "react";
 import { FormList } from "./FormList";
 
 export interface ITask {
@@ -31,8 +31,8 @@ export function FormTask() {
     setNewTaskText(event.target.value);
   }
 
-  function handleNewCommentInvalid(event: any) {
-    event.target.setCustomValidity("Este campo é obrigatório");
+  function handleNewCommentInvalid(event: InvalidEvent<HTMLInputElement>) {
+    event.currentTarget.setCustomValidity("Este campo é obrigatório");
   }
 
   function handleDeleteTask(taskId: string) {

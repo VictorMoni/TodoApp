@@ -21,7 +21,7 @@
 
 .amountNumberTasks {
   border-radius: 50%;
-  color: var(--white);
+  color: var(--gray-100);
   background: var(--gray-400);
   padding: 0.5rem;
   font-size: 0.75rem;
@@ -33,7 +33,7 @@
 }
 
 .amountNumberTasksCompleted {
-  color: var(--white);
+  color: var(--gray-100);
   background: var(--gray-400);
   padding: 0.5rem;
   font-size: 0.75rem;
@@ -106,7 +106,7 @@
 }
 
 .btnComplete {
-  color: var(--gray-100);
+  color: var(--white);
   border: 1px solid var(--purple-500);
   background-color: var(--purple-500);
 
