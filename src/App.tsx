@@ -6,10 +6,13 @@ export function App() {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <main className={styles.content}>
-      <FormTask />
+      <main id="main-content" className={styles.content}>
+        <FormTask />
+        <footer className={styles.footer}>
+          <span>Um passo de cada vez.</span>
+          <span>Seu planejamento fica salvo neste navegador.</span>
+        </footer>
       </main>
     </div>
   )
 }
-
