@@ -17,10 +17,7 @@
   --purple-500: #5E60CE;
 }
 
-:focus {
-  outline: transparent;
-  box-shadow: 0 0 0 2px var(--green-500);
-}
+:focus-visible { outline: 2px solid var(--blue-300); outline-offset: 4px; }
 
 * {
   margin: 0;
@@ -36,7 +33,17 @@ body {
 }
 
 body, input, textarea, button {
-  font-family: 'Intel', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem; /*1 unidade relativa, 16px no tamanho padrão*/
 }
+:root { color-scheme: dark; }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --gray-100: #242a35; --gray-200: #354052; --gray-300: #596477;
+  --gray-400: #d3dbe7; --gray-500: #ffffff; --gray-600: #f3f5fa; --gray-700: #e5ebf4;
+  --blue-300: #1979b5; --blue-500: #176b9b;
+  --purple-300: #6462c8; --purple-500: #5552bd; --red-500: #bd3434;
+}
+html, body { min-width: 320px; min-height: 100%; }
+button { touch-action: manipulation; }

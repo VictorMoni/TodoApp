@@ -8,3 +8,11 @@
     padding: 1rem;
     max-height: 12.5rem;
   }
+.header { position: relative; }
+.themeToggle {
+  position: absolute; right: max(20px, calc((100% - 736px) / 2)); top: 24px;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border: 1px solid var(--gray-400);
+  border-radius: 10px; color: var(--gray-100); background: var(--gray-500); cursor: pointer;
+}
+.themeToggle:hover { border-color: var(--blue-300); }
